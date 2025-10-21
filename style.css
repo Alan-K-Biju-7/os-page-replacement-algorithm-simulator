@@ -1,0 +1,58 @@
+/* Base Theme */
+:root{
+  --bg:#0b0f14;
+  --card:#121821;
+  --card-2:#0f141b;
+  --text:#e8eef7;
+  --muted:#9fb0c3;
+  --accent:#60a5fa;
+  --accent-2:#a78bfa;
+  --danger:#ef4444;
+  --success:#22c55e;
+  --warn:#f59e0b;
+  --border:#1f2a37;
+  --chip:#0f1722;
+}
+
+/* Reset + Base Layout */
+*{ box-sizing:border-box; margin:0; padding:0; }
+body{
+  font-family:ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap{
+  max-width:1100px;
+  margin:40px auto;
+  padding:0 16px;
+}
+
+/* UI Container */
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:18px;
+  box-shadow:0 4px 14px rgba(0,0,0,.25);
+  transition:0.2s ease-in-out;
+}
+.card:hover{
+  transform:translateY(-2px);
+}
+
+/* Button */
+.btn{
+  border:none;
+  background:linear-gradient(90deg, var(--accent), var(--accent-2));
+  color:#fff;
+  padding:10px 14px;
+  border-radius:12px;
+  font-weight:700;
+  cursor:pointer;
+  box-shadow:0 6px 16px rgba(96,165,250,.25);
+  transition:transform .05s ease, opacity .2s ease;
+}
+.btn:hover{ opacity:.95; }
+.btn:active{ transform:translateY(1px); }
