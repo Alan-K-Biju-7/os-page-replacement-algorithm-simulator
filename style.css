@@ -1,4 +1,23 @@
 /* --- Layout & Components (append) --- */
+:root{
+  --bg:#0b0f14;
+  --card:#121821;
+  --card-2:#0f141b;
+  --text:#e8eef7;
+  --muted:#9fb0c3;
+  --accent:#60a5fa;
+  --accent-2:#a78bfa;
+  --danger:#ef4444;
+  --success:#22c55e;
+  --warn:#f59e0b;
+  --border:#1f2a37;
+  --chip:#0f1722;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
 .hero{
   background:linear-gradient(135deg, var(--accent), var(--accent-2));
   border-radius:18px; padding:24px; color:#fff;
